@@ -1,60 +1,64 @@
 package com.personalproject.core.models;
+
+
+import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 @Model(
         adaptables = SlingHttpServletRequest.class,
-        adapters = HomeBanner.class,
+        adapters = Price.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
-public class HomeBannerImpl implements HomeBanner{
-    @ValueMapValue
-    String bio;
+public class PriceImpl implements Price{
 
     @ValueMapValue
-    String fullname;
+    String number;
 
     @ValueMapValue
-    String intro;
+    String heading;
 
     @ValueMapValue
-    String mybutton;
+    String title;
 
     @ValueMapValue
-    String img;
+    String tag1;
 
     @ValueMapValue
-    String pathfield;
+    String tag2;
+
+    @ValueMapValue
+    String tag3;
+
 
     @Override
-    public String getBio() {
-        return bio;
+    public String getNumber() {
+        return number;
     }
 
     @Override
-    public String getFullName() {
-        return fullname;
+    public String getHeading() {
+        return heading;
     }
 
     @Override
-    public String getIntro() {
-        return intro;
+    public String getTitle() {
+        return title;
     }
 
     @Override
-    public String getHeroImage() {
-        return img;
+    public String getTag1() {
+        return tag1;
     }
 
     @Override
-    public String getMyButton() {
-        return mybutton;
+    public String getTag2() {
+        return tag2;
     }
 
     @Override
-    public String getPath() {
-        return pathfield;
+    public String getTag3() {
+        return tag3;
     }
 }

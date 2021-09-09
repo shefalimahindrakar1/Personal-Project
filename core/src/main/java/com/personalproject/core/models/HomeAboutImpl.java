@@ -28,6 +28,9 @@ public class HomeAboutImpl implements HomeAbout{
     @ValueMapValue
     String img;
 
+    @ValueMapValue
+    String pathfield;
+
     @Override
     public String getAbout() {
         return about;
@@ -51,5 +54,10 @@ public class HomeAboutImpl implements HomeAbout{
     @Override
     public String getAboutButton() {
         return mybutton;
+    }
+
+    @Override
+    public String getPath() {
+        return pathfield;
     }
 }
