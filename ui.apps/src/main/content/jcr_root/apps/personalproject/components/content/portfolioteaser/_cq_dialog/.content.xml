@@ -11,17 +11,17 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <portfoliotitle
+                    <title
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Portfolio Title"
-                        name="./portfoliotitle"/>
-                    <portfoliotype
+                        fieldLabel="Title"
+                        name="./title"/>
+                    <type
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Portfolio Type"
-                        name="./portfoliotype"/>
-                    <portfolioimge
+                        fieldLabel="Type"
+                        name="./type"/>
+                    <image
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
                         autoStart="{Boolean}false"
@@ -31,7 +31,7 @@
                         fileReferenceParameter="./img"
                         mimeTypes="[image]"
                         multiple="{Boolean}false"
-                        name="./portfolioimage"
+                        name="./image"
                         title="Upload Image Asset"
                         uploadUrl="${suffix.path}"
                         useHTML5="{Boolean}true"/>
