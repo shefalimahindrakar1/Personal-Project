@@ -1,19 +1,20 @@
 <div data-sly-use.titletext="com.personalproject.core.models.TitleText"></div>
-<section class="services-area">
-    <div data-sly-test="${titletext.sectionGap==true}">
-        <div style="padding-top:120px"></div>
-    </div>
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="menu-content col-lg-7">
-                <div class="title text-center">
-                    <h1 class="mb-10">${titletext.title}</h1>
-                    <p>${titletext.info}</p>
-                </div>
-                <div data-sly-test="${titletext.paddingBottom==true}">
-                    <div class="pb-70"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="services-area ${titletext.sectionGap? 'pt-120' : ''}">
+<!--/*<div data-sly-test="${titletext.sectionGap==true}">
+<div class="section-gap"></div>
+</div>*/-->
+<div class="container">
+<div class="row d-flex justify-content-center">
+<div class="menu-content col-lg-7">
+
+ <div class="title text-center">
+<h1 class="mb-10">${titletext.title}</h1>
+<p>${titletext.info}</p>
+</div>
+</div>
+</div>
+</div>
+<div data-sly-test="${titletext.paddingBottom==true}">
+<div class="pb-70"></div>
+</div>
 </section>

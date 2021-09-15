@@ -3,35 +3,68 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2021-09-15T12:36:24.967+05:30"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/personalproject/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="personalproject/components/page">
         <root
+            jcr:lastModified="{Date}2021-09-14T20:30:46.218+05:30"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="personalproject/components/container"
             layout="responsiveGrid">
-            <experiencefragment-header
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="personalproject/components/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/header/master"/>
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="personalproject/components/container"
                 layout="responsiveGrid">
-                <title
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="personalproject/components/title"
-                    editable="{Boolean}true"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="personalproject/components/container"
                     editable="{Boolean}true"
                     layout="responsiveGrid"/>
+                <header
+                    jcr:created="{Date}2021-09-15T10:54:21.798+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-09-15T10:54:48.575+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="personalproject/components/content/header"
+                    path="/content/personalproject/us/en/home">
+                    <logo
+                        jcr:lastModified="{Date}2021-09-15T10:55:20.389+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/image"
+                        altValueFromDAM="true"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/personalproject/logo.png"
+                        isDecorative="false"
+                        titleValueFromDAM="true"/>
+                    <navigation
+                        jcr:lastModified="{Date}2021-09-15T10:55:47.318+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/navigation"
+                        collectAllPages="true"
+                        disableShadowing="false"
+                        navigationRoot="/content/personalproject/us/en"
+                        structureStart="1"/>
+                </header>
             </container>
-            <experiencefragment-footer
+            <footer
+                jcr:created="{Date}2021-09-15T10:56:35.798+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-09-15T12:36:24.963+05:30"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="personalproject/components/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/footer/master"/>
+                sling:resourceType="personalproject/components/content/footer"
+                description="We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.&#xd;&#xa;&#xd;&#xa;"
+                description1="Stay updated with our latest trends"
+                description2="Let us be social"
+                title="About Me"
+                title1="Newsletter"
+                title2="Follow Me"/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
