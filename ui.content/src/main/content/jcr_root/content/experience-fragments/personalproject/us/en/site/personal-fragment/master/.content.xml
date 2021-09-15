@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-09-15T16:51:12.116+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/personalproject/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Portfolio Fragment"
+        sling:resourceType="personalproject/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="personalproject/components/container"
+            layout="responsiveGrid">
+            <titletext
+                jcr:created="{Date}2021-09-15T16:50:35.810+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-09-15T16:50:54.008+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="personalproject/components/content/titletext"
+                info="Who are in extremely love with eco friendly system."
+                paddingbottom="true"
+                sectiongap="true"
+                title="Our Latest Featured Projects"/>
+            <portfolioteaser_1733104575
+                jcr:created="{Date}2021-09-15T15:34:39.766+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-09-15T15:38:35.824+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="personalproject/components/content/portfolioteaser"
+                img="/content/dam/personalproject/p5.jpg"
+                title="2D Vinyl Design"
+                type="vector">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                </cq:responsive>
+            </portfolioteaser_1733104575>
+            <portfolioteaser
+                jcr:created="{Date}2021-09-15T14:21:36.416+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-09-15T14:27:59.768+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="personalproject/components/content/portfolioteaser"
+                img="/content/dam/personalproject/p1.jpg"
+                title="2D Vinyl Design"
+                type="vector new">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                </cq:responsive>
+            </portfolioteaser>
+            <portfolioteaser_1263552954
+                jcr:created="{Date}2021-09-15T16:45:13.957+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-09-15T16:46:20.605+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="personalproject/components/content/portfolioteaser"
+                img="/content/dam/personalproject/p6.jpg"
+                title="2D Vinyl Design"
+                type="raster">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                </cq:responsive>
+            </portfolioteaser_1263552954>
+        </root>
+        <cq:metadata jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -5,8 +5,4 @@
     jcr:title="Site">
     <header/>
     <footer/>
-    <personal-fragment/>
-    <services-fragment/>
-    <testimonial-fragment/>
-    <price-fragment/>
 </jcr:root>
