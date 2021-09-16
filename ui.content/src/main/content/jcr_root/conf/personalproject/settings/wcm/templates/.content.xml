@@ -7,4 +7,5 @@
     <rep:policy/>
     <custom-template/>
     <my-custom-template/>
+    <custom-xf-template/>
 </jcr:root>

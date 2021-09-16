@@ -313,6 +313,16 @@
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_809824099811400>
+                <policy_974510097912700
+                    jcr:lastModified="{Date}2021-09-16T17:12:09.104+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Custom xf policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/personalproject/components/content/brands,/apps/personalproject/components/content/homeabout,/apps/personalproject/components/content/portfolioteaser,/apps/personalproject/components/content/price,/apps/personalproject/components/content/services,/apps/personalproject/components/content/testimonial,/apps/personalproject/components/content/titletext]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_974510097912700>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -349,6 +359,17 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <xfpage jcr:primaryType="nt:unstructured">
+                <policy_1631791451513
+                    jcr:lastModified="{Date}2021-09-16T16:57:16.980+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Custom xf page policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="[personalproject.site,personalproject.dependencies]">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1631791451513>
+            </xfpage>
         </components>
     </personalproject>
     <core jcr:primaryType="nt:unstructured">
