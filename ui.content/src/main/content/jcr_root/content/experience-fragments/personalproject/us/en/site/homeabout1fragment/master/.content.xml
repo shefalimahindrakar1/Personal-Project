@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:lastModified="{Date}2021-09-16T17:44:07.678+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2021-09-17T10:37:38.047+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:tags="[]"
         cq:template="/conf/personalproject/settings/wcm/templates/custom-xf-template"
         cq:xfMasterVariation="{Boolean}true"
         cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="homeabout1Fragment"
+        jcr:uuid="5eaebde8-2779-45c6-b040-eb2627a8764f"
         sling:resourceType="personalproject/components/xfpage">
         <root
             jcr:primaryType="nt:unstructured"

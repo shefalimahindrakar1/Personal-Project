@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:lastModified="{Date}2021-09-15T17:07:50.680+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2021-09-17T10:37:38.047+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:tags="[]"
         cq:template="/conf/personalproject/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
         cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Services Fragment"
+        jcr:uuid="bae9c34e-914b-4ece-bf32-b20cc4340c39"
         sling:resourceType="personalproject/components/xfpage">
         <root
             jcr:primaryType="nt:unstructured"

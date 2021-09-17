@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-09-15T17:13:11.786+05:30"
+        cq:lastModified="{Date}2021-09-17T10:34:28.084+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2021-09-17T10:37:38.047+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:tags="[]"
         cq:template="/conf/personalproject/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
         cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Testimonial Fragment"
+        jcr:uuid="370ecc94-2d8a-4a0c-b28c-a920ad11aa9d"
         sling:resourceType="personalproject/components/xfpage">
         <root
             jcr:primaryType="nt:unstructured"
@@ -18,13 +24,14 @@
             <titletext
                 jcr:created="{Date}2021-09-15T17:11:48.280+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2021-09-15T17:13:11.560+05:30"
+                jcr:lastModified="{Date}2021-09-17T10:34:27.658+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="personalproject/components/content/titletext"
                 info="It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person."
                 paddingbottom="true"
                 sectiongap="true"
+                styling="true"
                 title="Client’s Feedback About Me"/>
             <testimonial
                 jcr:created="{Date}2021-09-15T17:10:23.049+05:30"
