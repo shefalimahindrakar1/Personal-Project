@@ -24,6 +24,9 @@ public class TitleTextImpl implements TitleText {
     @ValueMapValue
     Boolean paddingbottom;
 
+    @ValueMapValue
+    Boolean styling;
+
     @Override
     public String getTitle() {
         return title;
@@ -42,5 +45,10 @@ public class TitleTextImpl implements TitleText {
     @Override
     public Boolean getPaddingBottom() {
         return paddingbottom;
+    }
+
+    @Override
+    public Boolean getStyling() {
+        return styling;
     }
 }
