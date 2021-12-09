@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2021-09-15T12:36:24.967+05:30"
+        cq:lastModified="{Date}2021-11-30T20:49:23.640+05:30"
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2021-09-16T18:04:06.866+05:30"
         cq:lastReplicatedBy="admin"
@@ -24,11 +24,26 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="personalproject/components/container"
                 layout="responsiveGrid">
+                <titletext
+                    jcr:created="{Date}2021-11-30T20:34:51.029+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-11-30T20:34:51.029+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="personalproject/components/content/titletext"/>
+                <titletext_1705176976
+                    jcr:created="{Date}2021-11-30T20:49:23.633+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-11-30T20:49:23.633+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="personalproject/components/content/titletext"/>
                 <container
+                    jcr:lastModified="{Date}2021-11-30T21:40:16.715+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="personalproject/components/container"
-                    editable="{Boolean}true"
-                    layout="responsiveGrid"/>
+                    editable="{Boolean}true"/>
                 <header
                     jcr:created="{Date}2021-09-15T10:54:21.798+05:30"
                     jcr:createdBy="admin"
