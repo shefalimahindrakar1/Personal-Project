@@ -13,10 +13,11 @@
         jcr:uuid="e6cdc6bf-ae33-4486-9d35-dddc93f8191c"
         sling:resourceType="personalproject/components/xfpage">
         <root
+            jcr:lastModified="{Date}2021-12-10T12:39:57.448+05:30"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="personalproject/components/container"
-            editable="{Boolean}true"
-            layout="responsiveGrid"/>
+            editable="{Boolean}true"/>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
                 <phone
