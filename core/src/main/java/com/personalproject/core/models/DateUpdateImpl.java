@@ -31,7 +31,7 @@ public class DateUpdateImpl implements DateUpdate {
             LOG.info("Inside try");
             ResourceResolver serviceResourceResolver = ResolverUtils.newResolver(resourceResolverFactory);
             Session session = serviceResourceResolver.adaptTo(Session.class);
-            Resource resource = serviceResourceResolver.getResource("/content/personalproject/us/en/home/jcr:content");
+            Resource resource = serviceResourceResolver.getResource("/content/personalproject/us/en/test-page/jcr:content/root/container/container/schedulerdemo");
             Node node = resource.adaptTo(Node.class);
             node.setProperty("DateTime", "Date and time added");
             node.setProperty("NewTime", DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())));
