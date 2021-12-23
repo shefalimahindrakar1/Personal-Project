@@ -32,6 +32,8 @@ public class PersonalScheduler implements Runnable {
     @Reference
     DateUpdate dateUpdate;
 
+    String path= "/content/personalproject/us/en/schedulerdemo/jcr:content/root/container/container/schedulerdemo";
+
     @Activate
     protected void activate(SchedulerConfiguration config) {
         schedulerId = config.schedulerName().hashCode();
@@ -61,7 +63,8 @@ public class PersonalScheduler implements Runnable {
     @Override
     public void run() {
         LOG.info("\n ---------RUN METHOD EXECUTING----------");
-        dateUpdate.updateDate();
+        dateUpdate.updateDate(path);
+        
 
 
 

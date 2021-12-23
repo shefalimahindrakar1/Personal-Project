@@ -1,5 +1,7 @@
 package com.personalproject.core.models;
 
 public interface DateUpdate {
-    public void updateDate();
+
+    public String updateDate(String path);
+
 }
