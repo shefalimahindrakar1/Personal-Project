@@ -4,7 +4,11 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+
         cq:lastModified="{Date}2021-12-09T09:31:26.485+05:30"
+
+
+
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2021-09-16T18:03:32.146+05:30"
         cq:lastReplicatedBy="admin"
@@ -17,7 +21,13 @@
         jcr:uuid="10f061ac-27f2-4c38-95c0-911da7f8db91"
         sling:resourceType="personalproject/components/page"
         approver1="Shefali"
+
         approver2="personal">
+
+        approver2="personal"
+        DateTime="Date and time added"
+        NewTime="{Date}2021-12-20T17:53:18.925Z">
+
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="personalproject/components/container"
@@ -36,7 +46,11 @@
                     <homebannerarea
                         jcr:created="{Date}2021-09-06T19:02:19.275+05:30"
                         jcr:createdBy="admin"
+
                         jcr:lastModified="{Date}2021-12-09T09:31:26.470+05:30"
+
+
+
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="personalproject/components/content/homebannerarea"

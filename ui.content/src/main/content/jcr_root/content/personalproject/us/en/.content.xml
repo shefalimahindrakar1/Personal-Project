@@ -96,8 +96,12 @@
     <about/>
     <services/>
     <portfolio/>
+
     <newpage/>
     <osgiconfig/>
     <workflows/>
     <test-page/>
+
+    <advanced/>
+
 </jcr:root>

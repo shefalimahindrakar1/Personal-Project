@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="c661080c-351e-43dd-9300-9bbcef9dcded">
+    <jcr:content
+        cq:name="personal-details"
+        cq:parentPath="/content/dam/personalproject/content-fragments/en"
+        jcr:description=""
+        jcr:lastModified="{Date}2021-12-13T13:03:15.506+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Personal Details"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-12-13T13:03:15.508+05:30">
+        <data
+            cq:model="/conf/personalproject/settings/dam/cfm/models/personal-cf-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                bio="&lt;p>Joanne Rowling was born on 31 July 1965 in&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Yate&quot; title=&quot;Yate&quot;>Yate&lt;/a>,&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Gloucestershire&quot; title=&quot;Gloucestershire&quot;>Gloucestershire&lt;/a>,&amp;nbsp;to Anne (née Volant), a science technician, and Peter James Rowling, a&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Rolls-Royce_Limited&quot; title=&quot;Rolls-Royce Limited&quot;>Rolls-Royce&lt;/a>&amp;nbsp;aircraft engineer.Her parents first met on a train departing from&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/London_King%27s_Cross_railway_station&quot; title=&quot;London King's Cross railway station&quot;>King's Cross Station&lt;/a>&amp;nbsp;bound for&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Arbroath&quot; title=&quot;Arbroath&quot;>Arbroath&lt;/a>&amp;nbsp;in 1964.&amp;nbsp;They married on 14 March 1965..One of Rowling's maternal great-grandfathers, Dugald Campbell, was a Scottish man from&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Lamlash&quot; title=&quot;Lamlash&quot;>Lamlash&lt;/a>.&amp;nbsp;Her mother's French paternal grandfather, Louis Volant,&amp;nbsp;was awarded the&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Croix_de_guerre_1914%E2%80%931918_(France)&quot; title=&quot;Croix de guerre 1914–1918 (France)&quot;>War Cross&lt;/a>&amp;nbsp;for exceptional bravery in defending the village of&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Courcelles-le-Comte&quot; title=&quot;Courcelles-le-Comte&quot;>Courcelles-le-Comte&lt;/a>&amp;nbsp;during&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/World_War_I&quot; title=&quot;World War I&quot;>World War I&lt;/a>. Rowling originally believed Volant had won the&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Legion_of_Honour&quot; title=&quot;Legion of Honour&quot;>Legion of Honour&lt;/a>&amp;nbsp;during the war, as she said when she received it herself in 2009. She later discovered the truth when featured in an episode of the UK genealogy series&amp;nbsp;&lt;i>&lt;a href=&quot;https://en.wikipedia.org/wiki/Who_Do_You_Think_You_Are%3F_(UK_TV_series)&quot; title=&quot;Who Do You Think You Are? (UK TV series)&quot;>Who Do You Think You Are?&lt;/a>&lt;/i>&amp;nbsp;in which she found out it was a different Louis Volant who won the Legion of Honour. When she heard her grandfather's story of bravery and discovered that the War Cross was for &amp;quot;ordinary&amp;quot; soldiers like her grandfather, who had been a waiter, she stated the War Cross was &amp;quot;better&amp;quot; to her than the Legion of Honour.&lt;/p>&#xa;"
+                bio_x0040_ContentType="text/html"
+                bio_x0040_LastModified="{Date}2021-12-12T22:50:29.549+05:30"
+                books="[Harry Potter]"
+                books_x0040_LastModified="{Date}2021-12-12T22:50:29.547+05:30"
+                dateofbirth="{Date}2015-07-31T22:48:00.000+05:30"
+                dateofbirth_x0040_LastModified="{Date}2021-12-12T22:50:29.548+05:30"
+                isauthor="{Boolean}true"
+                isauthor_x0040_LastModified="{Date}2021-12-12T22:50:29.549+05:30"
+                personalname="Joanne Rowling"
+                personalname_x0040_LastModified="{Date}2021-12-12T22:50:29.547+05:30"
+                profession="author"
+                profession_x0040_LastModified="{Date}2021-12-12T22:50:29.548+05:30"/>
+            <personal1
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                bio="&lt;p>Joanne Rowling was born on 31 July 1965 in&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Yate&quot; title=&quot;Yate&quot;>Yate&lt;/a>,&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Gloucestershire&quot; title=&quot;Gloucestershire&quot;>Gloucestershire&lt;/a>,&amp;nbsp;to Anne (née Volant), a science technician, and Peter James Rowling, a&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Rolls-Royce_Limited&quot; title=&quot;Rolls-Royce Limited&quot;>Rolls-Royce&lt;/a>&amp;nbsp;aircraft engineer.Her parents first met on a train departing from&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/London_King%27s_Cross_railway_station&quot; title=&quot;London King's Cross railway station&quot;>King's Cross Station&lt;/a>&amp;nbsp;bound for&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Arbroath&quot; title=&quot;Arbroath&quot;>Arbroath&lt;/a>&amp;nbsp;in 1964.&amp;nbsp;They married on 14 March 1965..One of Rowling's maternal great-grandfathers, Dugald Campbell, was a Scottish man from&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Lamlash&quot; title=&quot;Lamlash&quot;>Lamlash&lt;/a>.&amp;nbsp;Her mother's French paternal grandfather, Louis Volant,&amp;nbsp;was awarded the&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Croix_de_guerre_1914%E2%80%931918_(France)&quot;>War Cross&lt;/a>&amp;nbsp;for exceptional bravery in defending the village of&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Courcelles-le-Comte&quot; title=&quot;Courcelles-le-Comte&quot;>Courcelles-le-Comte&lt;/a>&amp;nbsp;during&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/World_War_I&quot; title=&quot;World War I&quot;>World War I&lt;/a>. Rowling originally believed Volant had won the&amp;nbsp;&lt;a href=&quot;https://en.wikipedia.org/wiki/Legion_of_Honour&quot; title=&quot;Legion of Honour&quot;>Legion of Honour&lt;/a>&amp;nbsp;during the war, as she said when she received it herself in 2009. She later discovered the truth when featured in an episode of the UK genealogy series&amp;nbsp;&lt;i>&lt;a href=&quot;https://en.wikipedia.org/wiki/Who_Do_You_Think_You_Are%3F_(UK_TV_series)&quot;>Who Do You Think You Are?&lt;/a>&lt;/i>&amp;nbsp;in which she found out it was a different Louis Volant who won the Legion of Honour. When she heard her grandfather's story of bravery and discovered that the War Cross was for &amp;quot;ordinary&amp;quot; soldiers like her grandfather, who had been a waiter, she stated the War Cross was &amp;quot;better&amp;quot; to her than the Legion of Honour.&lt;/p>&#xa;"
+                bio_x0040_ContentType="text/html"
+                bio_x0040_LastModified="{Date}2021-12-13T13:03:15.343+05:30"
+                books="[Harry Potter,Java,Aem]"
+                books_x0040_LastModified="{Date}2021-12-13T13:03:15.327+05:30"
+                dateofbirth="{Date}2015-07-31T22:48:00.000+05:30"
+                dateofbirth_x0040_LastModified="{Date}2021-12-13T13:03:15.331+05:30"
+                isauthor="{Boolean}false"
+                isauthor_x0040_LastModified="{Date}2021-12-13T13:03:15.339+05:30"
+                personalname="Joanne Rowling"
+                personalname_x0040_LastModified="{Date}2021-12-13T13:03:15.323+05:30"
+                profession="engineer"
+                profession_x0040_LastModified="{Date}2021-12-13T13:03:15.335+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <personal1
+                    jcr:description=""
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Personal1"
+                    name="personal1">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[personalname:8f73182d-35bb-4fbe-9701-3da6fe56b4d8,books:8f73182d-35bb-4fbe-9701-3da6fe56b4d8,dateofbirth:8f73182d-35bb-4fbe-9701-3da6fe56b4d8,profession:8f73182d-35bb-4fbe-9701-3da6fe56b4d8,isauthor:8f73182d-35bb-4fbe-9701-3da6fe56b4d8,bio:8f73182d-35bb-4fbe-9701-3da6fe56b4d8]"/>
+                </personal1>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>
