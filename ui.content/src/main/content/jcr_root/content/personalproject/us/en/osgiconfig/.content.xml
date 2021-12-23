@@ -2,11 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-
-        cq:lastModified="{Date}2021-12-09T11:04:59.362+05:30"
-
-
-
+        cq:lastModified="{Date}2021-12-03T15:15:15.088+05:30"
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2021-09-16T18:04:06.866+05:30"
         cq:lastReplicatedBy="admin"
@@ -15,11 +11,9 @@
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Test Page"
-        jcr:uuid="47f6e9fb-cce1-420e-8eaf-061d3875fec7"
-        sling:resourceType="personalproject/components/page"
-        approver1="Shefali"
-        approver2="personal">
+        jcr:title="OsgiConfig"
+        jcr:uuid="b9462709-7fe0-403f-ac2f-6c8b96414f8e"
+        sling:resourceType="personalproject/components/page">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="personalproject/components/container"
@@ -34,30 +28,13 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="personalproject/components/container"
                     layout="responsiveGrid">
-                    <titletext
-                        jcr:created="{Date}2021-12-08T15:52:39.249+05:30"
+                    <osgiservice
+                        jcr:created="{Date}2021-12-03T15:15:15.069+05:30"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-12-09T11:04:59.360+05:30"
+                        jcr:lastModified="{Date}2021-12-03T15:15:15.069+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/titletext"
-                        info="bye"
-                        paddingbottom="true"
-                        sectiongap="true"
-                        styling="false"
-                        title="For the individuals"/>
-
-
-                    <schedulerdemo
-                        jcr:created="{Date}2021-12-14T14:23:41.302+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-12-14T14:23:41.302+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/schedulerdemo"
-                        DateTime="Date and time added"
-                        NewTime="{Date}2021-12-21T12:00:00.012Z"/>
-
+                        sling:resourceType="personalproject/components/content/osgiservice"/>
                 </container>
             </container>
         </root>

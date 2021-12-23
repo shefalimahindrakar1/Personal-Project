@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2021-12-08T12:51:04.516+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2021-12-08T12:51:04.521+05:30"
+        cq:lastRolledoutBy="admin"
+        cq:template="/conf/personalproject/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="About"
+        jcr:uuid="8a166247-c267-4a79-bc22-662410b2d4a1"
+        sling:resourceType="personalproject/components/page"
+        approver1="Shefali"
+        approver2="personal">
+        <root
+            cq:lastRolledout="{Date}2021-12-08T12:51:04.282+05:30"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="personalproject/components/container"
+            layout="responsiveGrid">
+            <container
+                cq:lastRolledout="{Date}2021-12-08T12:51:04.296+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="personalproject/components/container"
+                layout="responsiveGrid">
+                <title
+                    cq:lastRolledout="{Date}2021-12-08T12:51:04.305+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="personalproject/components/title"/>
+                <container
+                    cq:lastRolledout="{Date}2021-12-08T12:51:04.321+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="personalproject/components/container"
+                    layout="responsiveGrid">
+                    <menunav
+                        cq:lastRolledout="{Date}2021-12-08T12:51:04.355+05:30"
+                        cq:lastRolledoutBy="admin"
+                        jcr:created="{Date}2021-09-14T12:42:13.990+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-08T12:51:04.338+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/content/menunav"
+                        heading="About Me"
+                        path="/content/personalproject/us/en/home"
+                        path1="/content/personalproject/us/en/home"
+                        path2="/content/personalproject/uk/en/about"
+                        title="Home"
+                        title1="Home "
+                        title2="About Me"/>
+                    <experiencefragment_590959216
+                        cq:lastRolledout="{Date}2021-12-08T12:51:04.370+05:30"
+                        cq:lastRolledoutBy="admin"
+                        jcr:created="{Date}2021-09-16T17:50:31.301+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-08T12:51:04.360+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/homeabout1fragment/master"/>
+                    <titletext_290553759
+                        cq:lastRolledout="{Date}2021-12-08T12:51:04.398+05:30"
+                        cq:lastRolledoutBy="admin"
+                        jcr:created="{Date}2021-09-15T11:53:12.196+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-08T12:51:04.383+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/content/titletext"
+                        info="Who are in extremely love with eco friendly system."
+                        paddingbottom="true"
+                        sectiongap="true"
+                        title="My Qualifications"/>
+                    <timeline
+                        cq:lastRolledout="{Date}2021-12-08T12:51:04.420+05:30"
+                        cq:lastRolledoutBy="admin"
+                        jcr:created="{Date}2021-09-14T23:44:17.150+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-08T12:51:04.409+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/content/timeline">
+                        <timelinedetailswithmap
+                            cq:lastRolledout="{Date}2021-12-08T12:51:04.428+05:30"
+                            cq:lastRolledoutBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
+                            jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:lastRolledout="{Date}2021-12-08T12:51:04.449+05:30"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
+                                jcr:primaryType="nt:unstructured"
+                                heading="Masters in Graphics &amp; Fine Arts"
+                                text="Result: 3.78 (In the Scale of 4.00)"
+                                title="Session: 2010-11"/>
+                            <item1
+                                cq:lastRolledout="{Date}2021-12-08T12:51:04.455+05:30"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
+                                jcr:primaryType="nt:unstructured"
+                                heading="Creative Content Developer"
+                                title="July 2015 to Present"/>
+                            <item2
+                                cq:lastRolledout="{Date}2021-12-08T12:51:04.464+05:30"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
+                                jcr:primaryType="nt:unstructured"
+                                heading="Bachelor in Graphics &amp; UI/UX"
+                                text="Result: 3.40 (In the Scale of 4.00)"
+                                title="Session: 2006-09"/>
+                            <item3
+                                cq:lastRolledout="{Date}2021-12-08T12:51:04.470+05:30"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
+                                jcr:primaryType="nt:unstructured"
+                                heading="Senior UI/UX Designer"
+                                title="July 2015 to Present"/>
+                            <item4
+                                cq:lastRolledout="{Date}2021-12-08T12:51:04.488+05:30"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
+                                jcr:primaryType="nt:unstructured"
+                                heading="Diploma in Fine Arts &amp; Printing"
+                                text="Result: 4.94 (In the Scale of 5.00)"
+                                title="Session: 2003-06"/>
+                        </timelinedetailswithmap>
+                    </timeline>
+                    <experiencefragment
+                        cq:lastRolledout="{Date}2021-12-08T12:51:04.505+05:30"
+                        cq:lastRolledoutBy="admin"
+                        jcr:created="{Date}2021-09-15T17:29:11.806+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-08T12:51:04.493+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/testimonial-fragment/master"/>
+                    <experiencefragment_1154828948
+                        cq:lastRolledout="{Date}2021-12-08T12:51:04.521+05:30"
+                        cq:lastRolledoutBy="admin"
+                        jcr:created="{Date}2021-09-16T17:48:04.014+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-08T12:51:04.511+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/brands-experience-fragment/master"/>
+                </container>
+            </container>
+        </root>
+        <cq:LiveSyncConfig
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/personalproject/us/en/about"
+            cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/default]"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
+</jcr:root>

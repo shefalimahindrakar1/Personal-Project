@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-12-08T16:59:23.796+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2021-12-08T12:51:02.656+05:30"
+        cq:lastRolledoutBy="admin"
+        cq:redirectTarget="/content/personalproject/uk/en"
+        cq:siteOwner="admin"
+        cq:template="/conf/personalproject/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:LiveSync,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="United Kingdom"
+        jcr:uuid="c0d6ca13-e347-46a4-a637-0810b4083cd9"
+        sling:resourceType="foundation/components/redirect"
+        approver1="Shefali"
+        approver2="personal">
+        <cq:LiveSyncConfig
+            cq:excludedPaths="[en/heythere]"
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/personalproject/us"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
+    <en/>
+</jcr:root>
