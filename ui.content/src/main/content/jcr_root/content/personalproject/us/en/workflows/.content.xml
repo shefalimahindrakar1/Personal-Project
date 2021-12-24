@@ -2,11 +2,14 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-12-07T11:38:42.759+05:30"
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2021-12-23T16:56:48.133+05:30"
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2021-12-07T11:39:08.965+05:30"
         cq:lastReplicatedBy="workflow-process-service"
         cq:lastReplicationAction="Activate"
+        cq:tags="[personalprojecttags:advancedpersonalpages/advanceddemopages]"
         cq:template="/conf/personalproject/settings/wcm/templates/page-content"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
