@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="basicdropdown"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <type
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Companies"
+                        name="./companies">
+                        <items jcr:primaryType="nt:unstructured">
+                            <ugam
+                                jcr:primaryType="nt:unstructured"
+                                text="ugam"
+                                value="ugam"/>
+                            <google
+                                jcr:primaryType="nt:unstructured"
+                                text="google"
+                                value="google"/>
+                            <microsoft
+                                jcr:primaryType="nt:unstructured"
+                                text="microsoft"
+                                value="microsoft"/>
+                            <goldmansachs
+                                jcr:primaryType="nt:unstructured"
+                                text="goldmansachs"
+                                value="goldmansachs"/>
+                            <apple
+                                jcr:primaryType="nt:unstructured"
+                                text="apple"
+                                value="apple"/>
+                        </items>
+                    </type>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
