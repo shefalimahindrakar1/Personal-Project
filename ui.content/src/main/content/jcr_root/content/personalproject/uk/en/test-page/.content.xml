@@ -2,7 +2,11 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-12-08T17:59:22.674+05:30"
+
+        cq:lastModified="{Date}2021-12-24T16:56:31.293+05:30"
+
+        
+
         cq:lastModifiedBy="admin"
         cq:lastRolledout="{Date}2021-12-09T11:05:03.938+05:30"
         cq:lastRolledoutBy="admin"
@@ -63,6 +67,15 @@
                         about="About Me"
                         details="PERSONAL DETAILS"
                         intro="hi"/>
+
+                    <cards
+                        jcr:created="{Date}2021-12-24T16:56:31.286+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-24T16:56:31.286+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/content/cards"/>
+
                 </container>
             </container>
         </root>
