@@ -2,40 +2,49 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-
-        cq:lastModified="{Date}2021-12-03T12:23:34.199+05:30"
-
-
-
+        cq:lastModified="{Date}2021-12-08T12:51:07.268+05:30"
         cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2021-09-16T18:04:06.866+05:30"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
+        cq:lastRolledout="{Date}2021-12-08T12:51:07.284+05:30"
+        cq:lastRolledoutBy="admin"
         cq:template="/conf/personalproject/settings/wcm/templates/page-content"
         jcr:isCheckedOut="{Boolean}true"
-        jcr:mixinTypes="[mix:versionable]"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="NewPage"
-        jcr:uuid="47902c6f-043f-451a-b617-1c6bb8f1070e"
-        sling:resourceType="personalproject/components/page">
+        jcr:uuid="2c9f1d06-c154-46a3-819b-33feeab93ec1"
+        sling:resourceType="personalproject/components/page"
+        approver1="Shefali"
+        approver2="personal">
         <root
+            cq:lastRolledout="{Date}2021-12-08T12:51:07.145+05:30"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="personalproject/components/container"
             layout="responsiveGrid">
             <container
+                cq:lastRolledout="{Date}2021-12-08T12:51:07.152+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="personalproject/components/container"
                 layout="responsiveGrid">
                 <container
+                    cq:lastRolledout="{Date}2021-12-08T12:51:07.163+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="personalproject/components/container"
                     layout="responsiveGrid">
                     <titletext_1117918916
+                        cq:lastRolledout="{Date}2021-12-08T12:51:07.189+05:30"
+                        cq:lastRolledoutBy="admin"
                         cq:styleIds="[1638348307787,1638348459475,1638348526756]"
                         jcr:created="{Date}2021-11-30T15:33:02.606+05:30"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-11-30T15:33:59.589+05:30"
+                        jcr:lastModified="{Date}2021-12-08T12:51:07.178+05:30"
                         jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="personalproject/components/content/titletext"
                         info="At about this time of year, some months after New Year's resolution have been made and kept, or made and neglected"
@@ -44,20 +53,26 @@
                         styling="false"
                         title="My Offered Services"/>
                     <mytitle
+                        cq:lastRolledout="{Date}2021-12-08T12:51:07.205+05:30"
+                        cq:lastRolledoutBy="admin"
                         cq:styleIds="[1638350655862]"
                         jcr:created="{Date}2021-12-01T14:54:50.932+05:30"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-12-01T16:51:08.907+05:30"
+                        jcr:lastModified="{Date}2021-12-08T12:51:07.194+05:30"
                         jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Hello"
                         sling:resourceType="personalproject/components/content/mytitle"/>
                     <homebannerarea
+                        cq:lastRolledout="{Date}2021-12-08T12:51:07.233+05:30"
+                        cq:lastRolledoutBy="admin"
                         cq:styleIds="[1638377754172,1638437680943]"
                         jcr:created="{Date}2021-12-01T22:29:58.031+05:30"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-12-02T11:51:37.784+05:30"
+                        jcr:lastModified="{Date}2021-12-08T12:51:07.214+05:30"
                         jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="personalproject/components/content/homebannerarea"
                         bio="This is me"
@@ -66,10 +81,13 @@
                         intro="You will begin to realise why this exercise is called the Dickens&#xd;&#xa; Pattern with reference to the ghost showing Scrooge&#xd;&#xa; some different futures."
                         mybutton="View Full Details"/>
                     <homeabout_copy
+                        cq:lastRolledout="{Date}2021-12-08T12:51:07.260+05:30"
+                        cq:lastRolledoutBy="admin"
                         jcr:created="{Date}2021-12-01T11:27:54.893+05:30"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-12-02T18:03:37.452+05:30"
+                        jcr:lastModified="{Date}2021-12-08T12:51:07.243+05:30"
                         jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="personalproject/components/content/homeabout"
                         about="This is me"
@@ -78,17 +96,23 @@
                         intro="You will begin to realise why this exercise is called the Dickens&#xd;&#xa; Pattern with reference to the ghost showing Scrooge&#xd;&#xa; some different futures."
                         mybutton="View Full Details"
                         pathfield="/content/personalproject/us/en/about"/>
-
                     <osgiservice
+                        cq:lastRolledout="{Date}2021-12-08T12:51:07.283+05:30"
+                        cq:lastRolledoutBy="admin"
                         jcr:created="{Date}2021-12-03T12:17:01.518+05:30"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-12-03T12:17:01.518+05:30"
+                        jcr:lastModified="{Date}2021-12-08T12:51:07.265+05:30"
                         jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="personalproject/components/content/osgiservice"/>
-
                 </container>
             </container>
         </root>
+        <cq:LiveSyncConfig
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/personalproject/us/en/newpage"
+            cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/default]"
+            jcr:primaryType="cq:LiveCopy"/>
     </jcr:content>
 </jcr:root>

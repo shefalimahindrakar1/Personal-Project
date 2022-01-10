@@ -14,7 +14,9 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="United Kingdom"
         jcr:uuid="c0d6ca13-e347-46a4-a637-0810b4083cd9"
+
         sling:configRef="/conf/personalproject/uk"
+
         sling:resourceType="foundation/components/redirect"
         approver1="Shefali"
         approver2="personal">
