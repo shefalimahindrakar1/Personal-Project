@@ -43,43 +43,38 @@ public class DynamicCountry extends SlingSafeMethodsServlet {
 
     @Override
     protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
-        ResourceResolver resourceResolver = request.getResourceResolver();
-        Resource jsonResource = resourceResolver.getResource("/content/dam/personalproject/country.json");
-        Asset asset = DamUtil.resolveToAsset(jsonResource);
-        Rendition originalAsset = Objects.requireNonNull(asset).getOriginal();
-        InputStream content = Objects.requireNonNull(originalAsset).adaptTo(InputStream.class);
-        StringBuilder jsonContent = new StringBuilder();
-        BufferedReader jsonReader = new BufferedReader(
-                new InputStreamReader(Objects.requireNonNull(content), StandardCharsets.UTF_8));
-        String line;
-        while ((line = jsonReader.readLine()) != null) {
-            jsonContent.append(line);
-        }
+        try{
 
-        JSONArray jsonArray = null;
-        try {
-            jsonArray = new JSONArray(jsonContent.toString());
+            ResourceResolver resourceResolver = request.getResourceResolver();
+            Resource jsonResource = resourceResolver.getResource("/content/dam/ugams/country.json");
+            Asset asset = DamUtil.resolveToAsset(jsonResource);
+            Rendition originalAsset = Objects.requireNonNull(asset).getOriginal();
+            InputStream content = Objects.requireNonNull(originalAsset).adaptTo(InputStream.class);
+            StringBuilder jsonContent = new StringBuilder();
+            BufferedReader jsonReader = new BufferedReader(
+                    new InputStreamReader(Objects.requireNonNull(content), StandardCharsets.UTF_8));
+            String line;
+            while ((line = jsonReader.readLine()) != null) {
+                jsonContent.append(line);
+            }
+            JSONArray jsonArray = new JSONArray(jsonContent.toString());
+            Map<String, String> data = new TreeMap<>();
+            for (int i = 0; i < jsonArray.length(); i++) {
+                data.put(jsonArray.getJSONObject(i).getString("text"),
+                        jsonArray.getJSONObject(i).getString("value"));
+            }
+            @SuppressWarnings({"unchecked", "rawtypes"})
+            DataSource ds = new SimpleDataSource(new TransformIterator<>(data.keySet().iterator(), (Transformer) o -> {
+                String dropValue = (String) o;
+                ValueMap vm = new ValueMapDecorator(new HashMap<>());
+                vm.put("text", dropValue);
+                vm.put("value", data.get(dropValue));
+                return new ValueMapResource(resourceResolver, new ResourceMetadata(), JcrConstants.NT_UNSTRUCTURED, vm);
+            }));
+            request.setAttribute(DataSource.class.getName(), ds);
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        Map<String, String> data = new TreeMap<>();
-        for (int i = 0; i < jsonArray.length(); i++) {
-            try {
-                data.put(jsonArray.getJSONObject(i).getString("text"),
-                        jsonArray.getJSONObject(i).getString("value"));
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
-
-        DataSource ds = new SimpleDataSource(new TransformIterator<>(data.keySet().iterator(), (Transformer) o -> {
-            String dropValue = (String) o;
-            ValueMap vm = new ValueMapDecorator(new HashMap<>());
-            vm.put("text", dropValue);
-            vm.put("value", data.get(dropValue));
-            return new ValueMapResource(resourceResolver, new ResourceMetadata(), JcrConstants.NT_UNSTRUCTURED, vm);
-        }));
-        request.setAttribute(DataSource.class.getName(), ds);
     }
 
 }

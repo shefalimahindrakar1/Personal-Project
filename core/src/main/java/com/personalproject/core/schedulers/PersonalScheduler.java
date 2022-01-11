@@ -64,7 +64,6 @@ public class PersonalScheduler implements Runnable {
     public void run() {
         LOG.info("\n ---------RUN METHOD EXECUTING----------");
         dateUpdate.updateDate(path);
-        
 
 
 
