@@ -1,31 +1,11 @@
-<h1>Single User</h1>
-<div data-sly-use.jsondata="com.personalproject.core.models.FetchSingleUser"></div>
-<div hidden>${jsondata.url}</div>
-<div id="demo" hidden>${jsondata.message}</div>
-</pre>
-<section>
-
-
-
-<p style="text-align: center;" id="demo1"></p>
-<p style="text-align: center;" id="demo2"></p>
-<p style="text-align: center;" id="demo3"></p>
-<p style="text-align: center;" id="demo4"></p>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="demo5" id="demo5" alt="" width="200" height="200"/></p>
-
-
-
-</section>
-
-
-
-<script>
-var test = "Hello";
-test = document.getElementById("demo").innerHTML;
-const obj = JSON.parse(test);
-document.getElementById("demo1").innerHTML = obj.data.first_name;
-document.getElementById("demo2").innerHTML = obj.data.last_name;
-document.getElementById("demo3").innerHTML = obj.data.email;
-document.getElementById("demo4").innerHTML = obj.data.id;
-document.getElementById("demo5").src = obj.data.avatar;
-</script>
+<sly class="container bg-white" data-sly-use.singleuser="com.personalproject.core.models.FetchSingleUser"></sly>
+<h3 hidden>${singleuser.url}</h3>
+<h3 hidden>${singleuser.message}</h3>
+<div class="column cardlist-container">
+<img src="${singleuser.avatar}"/>
+<div>
+<span>${singleuser.fname}</span>
+<span>${singleuser.lname}</span>
+</div>
+<p style="text-align: center;" id="demo3">${singleuser.email}</p>
+</div>
