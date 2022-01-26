@@ -8,11 +8,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ResolverUtils {
+
+    private ResolverUtils(){}
+
+
     public static final String service_user = "serviceuserdemo";
+
     public static ResourceResolver newResolver(ResourceResolverFactory resourceResolverFactory) throws LoginException {
-        final Map<String, Object> paramMap = new HashMap<String, Object>();
+        final Map<String, Object> paramMap = new HashMap<>();
         paramMap.put(ResourceResolverFactory.SUBSERVICE, service_user);
-        ResourceResolver resolver = resourceResolverFactory.getServiceResourceResolver(paramMap);
-        return resolver;
+        return resourceResolverFactory.getServiceResourceResolver(paramMap);
     }
 }
+

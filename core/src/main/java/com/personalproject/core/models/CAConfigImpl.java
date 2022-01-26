@@ -13,8 +13,6 @@ import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.annotation.PostConstruct;
 
@@ -24,7 +22,7 @@ import javax.annotation.PostConstruct;
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 
 public class CAConfigImpl implements CAConfig {
-    private static final Logger LOG = LoggerFactory.getLogger(CAConfigImpl.class);
+
     protected static final String RESOURCE_TYPE = "personalproject/components/content/cards";
 
     @SlingObject
@@ -40,7 +38,7 @@ public class CAConfigImpl implements CAConfig {
     private String siteLocale;
     private String siteAdmin;
     private String siteSection;
-    private PersonalCAConfig personalCAConfig;
+
 
     @Override
     public String getSiteCountry() {
@@ -65,12 +63,13 @@ public class CAConfigImpl implements CAConfig {
     @PostConstruct
     public void postConstruct() {
         PersonalCAConfig caConfig = getContextAwareConfig(currentPage.getPath(), resourceResolver);
+        if(caConfig != null){
         siteCountry = caConfig.siteCountry();
         siteLocale = caConfig.siteLocale();
         siteAdmin = caConfig.siteAdmin();
         siteSection = caConfig.siteSection();
 
-    }
+    }}
 
     private PersonalCAConfig getContextAwareConfig(String currentPage, ResourceResolver resourceResolver) {
         String currentPath = StringUtils.isNotBlank(currentPage) ? currentPage : StringUtils.EMPTY;

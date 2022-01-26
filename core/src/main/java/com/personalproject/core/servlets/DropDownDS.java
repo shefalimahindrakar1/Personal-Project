@@ -15,6 +15,8 @@ import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.osgi.service.component.annotations.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.Servlet;
 import java.util.ArrayList;
@@ -29,6 +31,7 @@ import java.util.List;
                 "sling.servlet.resourceTypes=" + "/apps/dropdownList"
         })
 public class DropDownDS extends SlingSafeMethodsServlet {
+    private static final Logger LOG = LoggerFactory.getLogger(DropDownDS.class);
     @Override
     protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) {
         try {
@@ -48,9 +51,9 @@ public class DropDownDS extends SlingSafeMethodsServlet {
                         dropDownList.add(new KeyValue(name, title));
                     });
                     DataSource ds = new SimpleDataSource(
-                            new TransformIterator(dropDownList.iterator(),
+                            new TransformIterator<>(dropDownList.iterator(),
                                     input -> {
-                                        KeyValue keyValue = (KeyValue) input;
+                                        KeyValue keyValue =  input;
                                         ValueMap vm = new ValueMapDecorator(new HashMap<>());
                                         vm.put("value", keyValue.key);
                                         vm.put("text", keyValue.value);
@@ -62,6 +65,7 @@ public class DropDownDS extends SlingSafeMethodsServlet {
                 }
             }
         } catch (Exception e) {
+            LOG.info(e.getMessage());
         }
     }
 

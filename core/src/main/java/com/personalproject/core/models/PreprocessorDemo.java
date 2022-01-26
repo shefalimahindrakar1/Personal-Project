@@ -39,8 +39,7 @@ public class PreprocessorDemo implements Preprocessor {
         String path = replicationAction.getPath();
         if(path.equals("/content/personalproject/us/en/schedulerdemo")){
             LOG.debug("\npath equal");
-            try {
-                ResourceResolver resourceResolver = ResolverUtils.newResolver(resourceResolverFactory);
+            try(ResourceResolver resourceResolver = ResolverUtils.newResolver(resourceResolverFactory)) {
                 Session session = resourceResolver.adaptTo(Session.class);
                 Resource resource = resourceResolver.getResource(path1);
                 Node node = resource.adaptTo(Node.class);

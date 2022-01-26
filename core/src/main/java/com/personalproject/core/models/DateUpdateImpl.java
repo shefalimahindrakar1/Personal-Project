@@ -25,30 +25,25 @@ public class DateUpdateImpl implements DateUpdate {
     ResourceResolverFactory resourceResolverFactory;
 
 
-    String path ="/content/personalproject/us/en/schedulerdemo/jcr:content/root/container/container/schedulerdemo";
-
-
     @Override
     public String updateDate(String path) {
-
-
-        try {
-            LOG.info("Inside try");
-            ResourceResolver serviceResourceResolver = ResolverUtils.newResolver(resourceResolverFactory);
+        try(ResourceResolver serviceResourceResolver = ResolverUtils.newResolver(resourceResolverFactory)) {
             Session session = serviceResourceResolver.adaptTo(Session.class);
             Resource resource = serviceResourceResolver.getResource(path);
-
-            Node node = resource.adaptTo(Node.class);
-            node.setProperty("DateTime", "Date and time added");
-            node.setProperty("NewTime", DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())));
-            session.save();
-            session.logout();
-
+            if (resource != null) {
+                Node node = resource.adaptTo(Node.class);
+                if(node != null) {
+                    node.setProperty("DateTime", "Date and time added");
+                    node.setProperty("NewTime", DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())));
+                    if (session != null){
+                        session.save();
+                        session.logout();
+                    }
+                }
+            }
         } catch (Exception e) {
             LOG.info(e.getMessage());
         }
-
         return path;
-
     }
 }

@@ -16,7 +16,7 @@ public @interface PersonalCAConfig {
     String siteLocale() default "en";
 
     @Property(label = "Personal Site Admin",
-            description ="Admin for updating country site")
+            description ="Admin for updating DynamicCountry site")
     String siteAdmin() default "personal-project";
 
     @Property(label = "Site Section",
