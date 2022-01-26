@@ -1,9 +1,13 @@
 package com.personalproject.core.models;
 
+
+import com.personalproject.core.config.OsgiMultiple;
+
 import com.personalproject.core.utils.Network;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -19,6 +23,10 @@ import java.util.Map;
         adapters = MultiUserList.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class MultiUserListImpl implements MultiUserList{
+
+    @OSGiService
+    OsgiMultiple osgiMultiple;
+
 
     @Inject
     String id;
@@ -45,6 +53,10 @@ public class MultiUserListImpl implements MultiUserList{
 
     @Override
     public String getUrl() {
+
+        return osgiMultiple.getInfo()+id;
+
         return "https://reqres.in/api/users?page="+id;
+
     }
 }
